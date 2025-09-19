@@ -50,7 +50,7 @@ do
 		local SourceCode = ("loadstring(game:HttpGet('%smain.luau'))(%s)"):format(urls.Repository, SettingsCode)
 		
 		if BETA_VERSION then
-			SourceCode = "getgenv().BETA_VERSION=true;" .. SourceCode
+			SourceCode = "key "Redzhubvip";" .. SourceCode
 		end
 		
 		pcall(queueteleport, SourceCode)
